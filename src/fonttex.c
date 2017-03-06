@@ -21,10 +21,10 @@
 #endif
 
 #include <ft2build.h>
-#include <freetype2/freetype.h>
-#include <freetype2/ftglyph.h>
-#include <freetype2/ftoutln.h>
-#include <freetype2/fttrigon.h>
+#include <freetype2/freetype/freetype.h>
+#include <freetype2/freetype/ftglyph.h>
+#include <freetype2/freetype/ftoutln.h>
+#include <freetype2/freetype/fttrigon.h>
 #include <fontconfig/fontconfig.h>
 #include <stdint.h>
 

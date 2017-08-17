@@ -21,10 +21,18 @@
 #endif
 
 #include <ft2build.h>
-#include <freetype2/freetype/freetype.h>
-#include <freetype2/freetype/ftglyph.h>
-#include <freetype2/freetype/ftoutln.h>
-#include <freetype2/freetype/fttrigon.h>
+#include FT_FREETYPE_H
+#include FT_GLYPH_H
+#include FT_OUTLINE_H
+#include FT_TRIGONOMETRY_H
+
+/* Edited by L.Tonin  <luca.tonin@epfl.ch> on 17/08/17 11:02:37
+ Changed to solve the inclusion bugs between ubuntu 14.04 and ubuntu 16.04
+//#include <freetype2/freetype/freetype.h>
+//#include <freetype2/freetype/ftglyph.h>
+//#include <freetype2/freetype/ftoutln.h>
+//#include <freetype2/freetype/fttrigon.h>
+*/
 #include <fontconfig/fontconfig.h>
 #include <stdint.h>
 

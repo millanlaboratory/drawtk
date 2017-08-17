@@ -48,7 +48,9 @@ AC_REPLACE_FUNCS([clock_gettime clock_nanosleep])
 
 
 # Checks for libraries.
-PKG_CHECK_CUSTOM(FREETYPE2, freetype2)
+PKG_CHECK_MODULES(FREETYPE2, freetype2, [], AC_MSG_ERROR([The freetype2 library
+										 cannot be found]))
+#PKG_CHECK_CUSTOM(FREETYPE2, freetype2)
 PKG_CHECK_CUSTOM(FONTCONFIG, fontconfig)
 PKG_CHECK_CUSTOM(GSTAPP, [gstreamer-app-0.10])
 
